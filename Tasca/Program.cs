@@ -1,9 +1,15 @@
-﻿namespace Tasca;
+namespace Peixos;
 
-internal class Program
+class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello, World!");
+        Peixera p = new Peixera();
+
+        p.Inicialitzar();
+        p.Simular(100);
+        p.Resultats();
+
+        Console.ReadKey();
     }
 }
